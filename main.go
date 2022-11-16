@@ -10,7 +10,7 @@ import (
 func main() {
 	http.HandleFunc("/", func(rw http.ResponseWriter, r *http.Request) {
 		fmt.Printf("Request came from %s\n", r.RemoteAddr)
-		fmt.Fprint(rw, "<h1>Hello, Welcome to Dagger CI example, Dagger is a programmable CI/CD engine that runs your pipelines in containers.</h1>")
+		fmt.Fprint(rw, "<h1>Hello, Welcome to Dagger, CI example, Dagger is a programmable CI/CD engine that runs your pipelines in containers.</h1>")
 	})
 
 	err := http.ListenAndServe(":9090", nil)
