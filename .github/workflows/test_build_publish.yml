@@ -16,7 +16,7 @@ jobs:
         with:
           go-version: 1.19
       - uses: actions/checkout@v3
-      - run: go run ci/main.go test
+      - run: go run ci/dagger.go test
       - run: tail -n +1 output/*/*/*.out
-      - run: go run ci/main.go push
+      - run: go run ci/dagger.go push
       - run: tail -n +1 output/*/*/*.out
