@@ -58,8 +58,8 @@ func test(ctx context.Context) error {
 	cache := client.CacheVolume(cacheKey)
 
 	// multiplatform tests
-	goversions := []string{"1.18", "1.19"}
-	platforms := []dagger.Platform{"linux/amd64", "linux/arm64"}
+	goversions := []string{"1.19"}
+	platforms := []dagger.Platform{"linux/arm64"}
 
 	for _, plat := range platforms {
 		for _, goversion := range goversions {
