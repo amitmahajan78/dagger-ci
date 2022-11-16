@@ -5,8 +5,8 @@ on:
       - main
 
 jobs:
-  test:
-    name: test
+  publish:
+    name: publish
     runs-on: ubuntu-latest
     steps:
       - name: Set up QEMU
@@ -21,4 +21,3 @@ jobs:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
       - run: go run ci/dagger.go push
-      - run: tail -n +1 output/*/*/*.out
