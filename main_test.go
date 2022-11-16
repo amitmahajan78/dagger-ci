@@ -8,7 +8,7 @@ import (
 
 func TestGetInfo(t *testing.T) {
 	g := getInfo()
-	should := "this is dagger ci demo"
+	should := "this is dagger ci demo with feature 1"
 
 	assert.Equal(t, should, g)
 }
