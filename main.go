@@ -23,5 +23,5 @@ func main() {
 }
 
 func getInfo() string {
-	return "this is dagger ci demo"
+	return "this is dagger ci demo with feature 1"
 }
