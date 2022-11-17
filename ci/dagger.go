@@ -129,7 +129,7 @@ func push(ctx context.Context) error {
 	}
 	// Publish all images
 	addr, err := client.Container().Publish(ctx,
-		"amitmahajan/dagger-ci:latest",
+		"amitmahajan/dagger-ci:1.1",
 		dagger.ContainerPublishOpts{
 			PlatformVariants: variants,
 		})
