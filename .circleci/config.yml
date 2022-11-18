@@ -12,7 +12,7 @@ jobs:
           command: docker run --rm --privileged tonistiigi/binfmt:latest --install all
       - run:
           name: Dagger Test Pipeline
-          command: go run ci/main.go test
+          command: go run ci/dagger.go test
       - run:
           name: Test results
           command: tail -n +1 output/*/*/*.out
